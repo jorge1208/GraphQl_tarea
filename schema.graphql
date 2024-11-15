@@ -1,0 +1,15 @@
+# schema.graphql
+
+type Query {
+  producto(id: ID!): Producto
+}
+
+type Mutation {
+  actualizarPrecio(id: ID!, precio: Int!): Producto
+}
+
+type Producto {
+  id: ID!
+  nombre: String!
+  precio: Int!
+}
